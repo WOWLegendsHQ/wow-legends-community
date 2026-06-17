@@ -45,9 +45,9 @@ A **permanent demo realm** is online so you can experience everything before you
 
 Two ways to run WOW Legends:
 
-| | **Community Edition** (this repo) | **The App** |
+| | **Community Edition** (this repo) | [**The App**](https://wow-legends.eu/app) |
 |---|---|---|
-| Cost | **Free, forever** | Supporter |
+| Cost | **Free, forever** | **€25** (supporter) |
 | Setup | Manual — you extract & configure it | One-click install, update & manage |
 | Web portal | Bring your own | **Included** — player sign-up, accounts & shop, the same site as [play.wow-legends.eu](https://play.wow-legends.eu) |
 | Best for | Tinkerers, server admins, the curious | Anyone who just wants it running fast |
@@ -66,7 +66,7 @@ Two ways to run WOW Legends:
 
 > Verify a download before trusting it: `Get-FileHash <file> -Algorithm SHA256` and compare it against `SHA256SUMS.txt`.
 
-> **Supporters who use [The App](https://wow-legends.eu)** also get a ready-made **player website** — sign-up, accounts & shop, the same site as [play.wow-legends.eu](https://play.wow-legends.eu) — plus one-click install/updates and **early access** to each new version before it rolls out free here.
+> **Become a supporter — €25.** You get [**The App**](https://wow-legends.eu/app) (one-click install, update & manage), a ready-made **player website** (sign-up, accounts & shop — the same as [play.wow-legends.eu](https://play.wow-legends.eu)), **12 months of updates**, and **~2,500 welcome credits** to spend. The Community Edition here stays **free forever**.
 
 ## 📚 Documentation
 
