@@ -28,6 +28,8 @@ This isn't a bare repack. It's an AzerothCore-based WotLK 3.3.5a server with a l
 - **🛡️ Stability-first** — deep, ongoing core-level crash hardening, built for long, stable uptime rather than a realm that falls over every few hours.
 - **⚙️ Yours to tune** — bot counts, rates, hardcore rules and more are all config. Scales from a solo box to a fully-populated world.
 
+**→ [See everything it can do](https://wow-legends.eu/features)**
+
 ## 🎮 Try it right now (no download)
 
 A **permanent demo realm** is online so you can experience everything before you host your own:
@@ -70,6 +72,7 @@ Two ways to run WOW Legends:
 
 - [**Quick Start**](docs/QUICKSTART.md) — download, set up and run your own server, step by step
 - [**Requirements**](docs/REQUIREMENTS.md) — hardware profiles, from a small box to a busy world
+- [**Guide & Commands**](https://wow-legends.eu/guide) — in-depth how-to: bots, AI chat, hardcore, Mak'gora & the searchable command list
 
 ## 🧩 Related projects
 
