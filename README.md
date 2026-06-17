@@ -22,7 +22,7 @@ and hardcore mode.**
 This isn't a bare repack. It's an AzerothCore-based WotLK 3.3.5a server with a living world built in:
 
 - **🤖 Hundreds of AI playerbots** — questing, fighting, trading and roaming across Azeroth, so the world feels alive at any hour. You set how many (500 by default).
-- **🧠 AI bot chat** — whisper a bot (or speak near one) and it answers in character, in your language. Backed by WOW Legends' hosted AI (your own API key from the site) *or* a local model — your choice.
+- **🧠 AI bot chat** — whisper a bot (or speak near one) and it answers in character, in your language. Runs on WOW Legends' **hosted AI** (credits-based — supporters get a welcome batch) *or* a free **local model** via Ollama — your choice.
 - **❤️ Personal AI Companion** — claim one permanent battle buddy that fights at your side, levels with you, and **remembers your conversations** across sessions.
 - **💀 Hardcore mode + Mak'gora** — one life, permanent death, and consensual duels to the death between hardcore players.
 - **🛡️ Stability-first** — deep, ongoing core-level crash hardening, built for long, stable uptime rather than a realm that falls over every few hours.
@@ -66,7 +66,7 @@ Two ways to run WOW Legends:
 
 > Verify a download before trusting it: `Get-FileHash <file> -Algorithm SHA256` and compare it against `SHA256SUMS.txt`.
 
-> **Become a supporter — €25.** You get [**The App**](https://wow-legends.eu/app) (one-click install, update & manage), a ready-made **player website** (sign-up, accounts & shop — the same as [play.wow-legends.eu](https://play.wow-legends.eu)), **12 months of updates**, and **~2,500 welcome credits** to spend. The Community Edition here stays **free forever**.
+> **Become a supporter — €25.** You get [**The App**](https://wow-legends.eu/app) (one-click install, update & manage), a ready-made **player website** (sign-up, accounts & shop — the same as [play.wow-legends.eu](https://play.wow-legends.eu)), **12 months of updates**, and **~2,500 welcome credits to power the AI chat** on the hosted AI. The Community Edition here stays **free forever** — and you can run the AI chat for free on a local Ollama model any time.
 
 ## 📚 Documentation
 
