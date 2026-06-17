@@ -6,7 +6,7 @@
 with a world full of AI playerbots, an AI battle companion that remembers you,
 and hardcore mode.**
 
-[🌐 Website](https://wow-legends.eu) · [🗺️ Roadmap](https://wow-legends.eu/roadmap) · [🎮 Try the live demo](#-try-it-right-now-no-download) · [💬 Discord](https://discord.gg/2RdZZ3pRZ)
+[🌐 Website](https://wow-legends.eu) · [🗺️ Roadmap](https://wow-legends.eu/roadmap) · [🎮 Try the live demo](https://play.wow-legends.eu) · [💬 Discord](https://discord.gg/2RdZZ3pRZ)
 
 </div>
 
@@ -47,6 +47,7 @@ Two ways to run WOW Legends:
 |---|---|---|
 | Cost | **Free, forever** | Supporter |
 | Setup | Manual — you extract & configure it | One-click install, update & manage |
+| Web portal | Bring your own | **Included** — player sign-up, accounts & shop, the same site as [play.wow-legends.eu](https://play.wow-legends.eu) |
 | Best for | Tinkerers, server admins, the curious | Anyone who just wants it running fast |
 
 **Community Edition — grab the [latest release](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest).** You need every file below (the server, the game data, MySQL and the C++ runtime):
@@ -63,7 +64,7 @@ Two ways to run WOW Legends:
 
 > Verify a download before trusting it: `Get-FileHash <file> -Algorithm SHA256` and compare it against `SHA256SUMS.txt`.
 
-> Every release also ships through **The App** as a one-click update, and supporters get **early access** to each new version before it rolls out free here.
+> **Supporters who use [The App](https://wow-legends.eu)** also get a ready-made **player website** — sign-up, accounts & shop, the same site as [play.wow-legends.eu](https://play.wow-legends.eu) — plus one-click install/updates and **early access** to each new version before it rolls out free here.
 
 ## 📚 Documentation
 
