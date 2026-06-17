@@ -8,8 +8,8 @@ config setting you tune. Pick a profile below.
 
 - **OS:** Windows 10 / 11 or Windows Server (64-bit)
 - **CPU:** modern multi-core (4 cores minimum; more cores = more bots — the bot AI runs across map-update threads)
-- **Storage:** **SSD strongly recommended** (a hard drive can stall the database under load). ~25–40 GB free for the server, extracted client data and database.
-- **A WoW 3.3.5a (build 12340) client** — needed once to extract world data (no Blizzard data is shipped)
+- **Storage:** **SSD strongly recommended** (a hard drive can stall the database under load). ~25–40 GB free for the server, game data and database.
+- **A WoW 3.3.5a (build 12340) client** — to log in and play (the server's world data is included in the download)
 - **Bundled/required runtime:** MySQL 8.x and the Microsoft VC++ 2015–2022 x64 Redistributable (the App installs these for you)
 
 ## Server profiles

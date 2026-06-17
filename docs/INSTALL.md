@@ -1,35 +1,41 @@
 # Install Guide
 
-> 🚧 **Pre-release.** The full step-by-step (with the exact download links and tools)
-> is finalized when **v1.0** ships. This page lays out the shape of it so you know
-> what to expect. Want to play *now* instead of hosting? Use the
-> [demo realm](../README.md#-try-it-right-now-no-download).
+The full, step-by-step setup lives in **[QUICKSTART.md](QUICKSTART.md)** — download the release,
+extract it, set up the database, and launch (about ten minutes). **Start there.**
+
+This page is the bigger picture and notes on going public.
 
 ## The two editions
 
-- **Community Edition (free, this repo):** you assemble it yourself — download the release,
-  extract your client data, set up the database, configure, and launch. More hands-on, fully yours.
-- **The App (supporter):** one click installs, configures, updates and manages everything.
-  If you'd rather skip the manual steps, that's what it's for — see [wow-legends.eu](https://wow-legends.eu).
+- **Community Edition (free, this repo):** you download the release, extract it, and run it
+  yourself — fully yours, more hands-on.
+- **The App (supporter):** one click installs, configures, updates and manages everything. If you'd
+  rather skip the manual steps, that's what it's for — see [wow-legends.eu](https://wow-legends.eu).
 
-## What you'll need
+## What you need
 
 - A machine meeting the [requirements](REQUIREMENTS.md)
-- A **WoW 3.3.5a (build 12340)** client (your own copy — the repack ships **no** Blizzard data)
-- MySQL 8.x and the VC++ 2015–2022 x64 redistributable
+- A **WoW 3.3.5a (build 12340)** client to log in and play
+- Windows (64-bit). The bundled MySQL 8.x and the VC++ 2015–2022 x64 redistributable come with the release.
 
-## The manual flow (high level)
+## What's in the download
 
-1. **Download** the latest Community Edition release from the [Releases page](https://github.com/WOWLegendsHQ/wow-legends-community/releases).
-2. **Set up the database** — create the WL databases and import the bundled, pre-populated data.
-3. **Extract client data** — generate `maps` / `vmaps` / `mmaps` / `dbc` from your own 3.3.5a client using the bundled extractor tools, and point the server's `DataDir` at them.
-4. **Configure** — set your realm name/address, rates, bot count, hardcore rules and (optionally) AI chat, in the `.conf` files.
-5. **Launch** — start MySQL, the auth server, then the world server. Create your GM account and log in.
+The release is a handful of files: the server (`WOW_Legends_Repack.zip`, with a ready-made database
+inside), the game world data (`gamedata_*.zip`), a portable MySQL, and the VC++ runtime. You extract
+them into one folder and run `start.bat` — see [QUICKSTART.md](QUICKSTART.md) for the exact steps.
 
-> Detailed, copy-paste steps for each stage — with screenshots — land here at the v1.0 release.
-> Hosting publicly also involves port-forwarding and securing your database; that guide ships alongside.
+## Hosting it publicly
+
+Running a realm others can reach adds a few steps beyond the quick start:
+
+- **Port-forward** the auth (3724) and world (8085) ports on your router, and set your realm's
+  external address in the database `realmlist` so players can find it.
+- **Change every default account password** — `admin`, `ahbot` and `wlshop` all ship with the same
+  default; see the accounts section of [QUICKSTART.md](QUICKSTART.md).
+- **Lock down remote access** — keep the RA and SOAP ports bound to localhost (the defaults), or
+  firewall them.
 
 ## Getting help
 
-- 💬 Community support: [wow-legends.eu](https://wow-legends.eu)
+- 💬 Community: [wow-legends.eu](https://wow-legends.eu)
 - 🐛 Found a bug or a gap in these docs? Open an [issue](https://github.com/WOWLegendsHQ/wow-legends-community/issues).
