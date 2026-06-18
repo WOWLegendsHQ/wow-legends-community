@@ -56,7 +56,7 @@ Two ways to run WOW Legends:
 
 | File | What it is |
 |---|---|
-| `WOW_Legends_Repack.zip` | the server — executables, configs, scripts and the ready-made database |
+| `WOW_Legends_Repack.zip` | the server — executables, configs, **modules**, scripts and the ready-made database |
 | `gamedata_dbc.zip` · `gamedata_maps.zip` · `gamedata_vmaps.zip` · `gamedata_mmaps.zip` · `gamedata_Cameras.zip` | the game world data (~1.2 GB zipped) |
 | `mysql_portable_8.4.9.zip` | a bundled portable MySQL (or point the server at your own) |
 | `vc_redist.x64.exe` | Microsoft Visual C++ runtime (run once) |

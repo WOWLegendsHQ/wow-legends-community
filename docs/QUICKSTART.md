@@ -17,6 +17,7 @@ wow_legends_repack\
 ├─ start.bat   ← double-click to run the server (after setup)
 ├─ worldserver.exe, authserver.exe, dbimport.exe (+ runtime DLLs)
 ├─ configs\                ← settings (worldserver.conf, modules\…)
+├─ modules\                ← server modules (playerbots, wowlegends, ahbot, xp) — REQUIRED, don't delete
 ├─ dump\                   ← the ready-made databases (imported once, in setup)
 ├─ data\
 │   ├─ sql\create\         ← create_mysql.sql (makes the empty DBs + user)
