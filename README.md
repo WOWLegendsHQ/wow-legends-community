@@ -12,8 +12,10 @@ and hardcore mode.**
 
 ---
 
-> ### 🎉 v1.0 is here
-> The first public release of the Community Edition is out — **[grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)** and host your own realm in about ten minutes. Want to look before you leap? Hop on the **permanent demo realm** below, no download needed.
+> ### 🌍 v1.1.0 "Living, Dangerous World" is out — free for everyone
+> All-zones **World PvP** (always-on or scheduled windows), **faction Battlefront** world events, a companion that remembers the story you live together, auto-summoned dungeon groups and smarter, meaner bots — **[grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)** and host your own realm in about ten minutes. Want to look before you leap? Hop on the **permanent demo realm** below, no download needed.
+>
+> *Supporters ride one release ahead: **v1.2.0 "The Bots Come Alive"** — bots that remember **you**, AI ambient chatter, a rewritten bot voice, and a little secret in Stranglethorn Vale — is live in [the App](https://wow-legends.eu/app) today. Every version lands here for free when the next one ships.*
 
 ---
 
@@ -21,9 +23,10 @@ and hardcore mode.**
 
 This isn't a bare repack. It's an AzerothCore-based WotLK 3.3.5a server with a living world built in:
 
-- **🤖 Hundreds of AI playerbots** — questing, fighting, trading and roaming across Azeroth, so the world feels alive at any hour. You set how many (500 by default).
+- **🤖 Hundreds of AI playerbots** — questing, fighting, trading and roaming across Azeroth at every level, so the world feels alive at any hour. You set how many (100 out of the box; the engine has been run into the thousands).
+- **⚔️ A living, dangerous world** *(optional)* — flip on all-zones **World PvP** (continuous, or scheduled PvP windows) and enemy players *and bots* become fair game everywhere; **faction Battlefront** events erupt in random zones with a real tug-of-war objective both factions fight over.
 - **🧠 AI bot chat** — whisper a bot (or speak near one) and it answers in character, in your language. Runs on WOW Legends' **hosted AI** (credits-based — supporters get a welcome batch) *or* a free **local model** via Ollama — your choice.
-- **❤️ Personal AI Companion** — claim one permanent battle buddy that fights at your side, levels with you, and **remembers your conversations** across sessions.
+- **❤️ Personal AI Companion** — claim one permanent battle buddy that fights at your side, levels with you, and **remembers your conversations and the milestones you live through together** across sessions.
 - **💀 Hardcore mode + Mak'gora** — one life, permanent death, and consensual duels to the death between hardcore players.
 - **🛡️ Stability-first** — deep, ongoing core-level crash hardening, built for long, stable uptime rather than a realm that falls over every few hours.
 - **⚙️ Yours to tune** — bot counts, rates, hardcore rules and more are all config. Scales from a solo box to a fully-populated world.
