@@ -6,7 +6,7 @@
 with a world full of AI playerbots, an AI battle companion that remembers you,
 and hardcore mode.**
 
-[🌐 Website](https://wow-legends.eu) · [🗺️ Roadmap](https://wow-legends.eu/roadmap) · [🎮 Try the live demo](https://play.wow-legends.eu) · [💬 Discord](https://discord.gg/2RdZZ3pRZ)
+[🌐 Website](https://wow-legends.eu) · [🗺️ Roadmap](https://wow-legends.eu/roadmap) · [🎮 Try the live demo](https://play.wow-legends.eu) · [💬 Discord](https://discord.gg/j8nN2rz42A)
 
 </div>
 
