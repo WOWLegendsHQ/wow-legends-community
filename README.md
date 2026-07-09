@@ -12,10 +12,10 @@ and hardcore mode.**
 
 ---
 
-> ### 🌍 v1.1.0 "Living, Dangerous World" is out — free for everyone
-> All-zones **World PvP** (always-on or scheduled windows), **faction Battlefront** world events, a companion that remembers the story you live together, auto-summoned dungeon groups and smarter, meaner bots — **[grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)** and host your own realm in about ten minutes. Want to look before you leap? Hop on the **permanent demo realm** below, no download needed.
+> ### 🌍 v1.2.0 "The Bots Come Alive" is out — free for everyone
+> Bots that remember **you**, recognize familiar faces, hold grudges, and hold short AI-written conversations with each other; a rewritten in-world bot voice; and a little secret in Stranglethorn Vale — **[grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)** and host your own realm in about ten minutes. Want to look before you leap? Hop on the **permanent demo realm** below, no download needed.
 >
-> *Supporters ride one release ahead: **v1.2.0 "The Bots Come Alive"** — bots that remember **you**, AI ambient chatter, a rewritten bot voice, and a little secret in Stranglethorn Vale — is live in [the App](https://wow-legends.eu/app) today. Every version lands here for free when the next one ships.*
+> *Supporters ride one release ahead: **v1.3.0 "Paths of Legends"** — opt-in challenge Paths (the Iron Oath, the Pilgrim's Way, the Slow Burn and more) sworn at the Herald of the Fallen, plus bots that obey plain-language commands in any language — is live in [the App](https://wow-legends.eu/app) today. Every version lands here for free when the next one ships.*
 
 ---
 
