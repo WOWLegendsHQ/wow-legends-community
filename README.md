@@ -12,10 +12,10 @@ and hardcore mode.**
 
 ---
 
-> ### 🌍 v1.2.0 "The Bots Come Alive" is out — free for everyone
-> Bots that remember **you**, recognize familiar faces, hold grudges, and hold short AI-written conversations with each other; a rewritten in-world bot voice; and a little secret in Stranglethorn Vale — **[grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)** and host your own realm in about ten minutes. Want to look before you leap? Hop on the **permanent demo realm** below, no download needed.
+> ### 🌍 v1.3.1 "Paths of Legends" is out — free for everyone
+> Opt-in challenge **Paths** sworn at the Herald of the Fallen — walk the Long Road, the Iron Oath, the Pilgrim's Way or the Slow Burn and earn a trophy with your name on it (the hardcore one-life oath is sworn at the same Herald). Plus **talk-and-command**: tell your bots what to do in plain language, in *your* language, and they do it. This release also bundles two fixes fresh from the supporter branch: bots now auto-accept shared starter-zone quests again, and comms addons (Questie, DBM…) no longer confuse the AI chat. **[Grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)** and host your own realm in about ten minutes — or try the **permanent demo realm** below first, no download needed.
 >
-> *Supporters ride one release ahead: **v1.3.0 "Paths of Legends"** — opt-in challenge Paths (the Iron Oath, the Pilgrim's Way, the Slow Burn and more) sworn at the Herald of the Fallen, plus bots that obey plain-language commands in any language — is live in [the App](https://wow-legends.eu/app) today. Every version lands here for free when the next one ships.*
+> *Supporters ride one release ahead: **v1.4.0 "The Living Party"** — bots that walk real roads across every continent (Legend Roads), a Guide that escorts you anywhere you ask, party-wide plain-language orders, bots that narrate the journey, pitch in when you fight, live idle lives around campfires, save you at the brink (Triage Healer), speak with individual personalities (Voice Cards), take turns instead of flooding chat, answer questions grounded in server truth (The Sage), and clear whole dungeons on command (Dungeon Clear) — is live in [the App](https://wow-legends.eu/app) today. Every version lands here for free when the next one ships.*
 
 ---
 
@@ -27,6 +27,8 @@ This isn't a bare repack. It's an AzerothCore-based WotLK 3.3.5a server with a l
 - **⚔️ A living, dangerous world** *(optional)* — flip on all-zones **World PvP** (continuous, or scheduled PvP windows) and enemy players *and bots* become fair game everywhere; **faction Battlefront** events erupt in random zones with a real tug-of-war objective both factions fight over.
 - **🧠 AI bot chat** — whisper a bot (or speak near one) and it answers in character, in your language. Runs on WOW Legends' **hosted AI** (credits-based — supporters get a welcome batch) *or* a free **local model** via Ollama — your choice.
 - **❤️ Personal AI Companion** — claim one permanent battle buddy that fights at your side, levels with you, and **remembers your conversations and the milestones you live through together** across sessions.
+- **🗣️ Talk-and-command** — with AI chat on, bots don't just talk: **they obey**. "follow me", "attack that warlock", "wait here" — plain language, any language, no command syntax to learn.
+- **🏅 Paths of Legends** — swear an opt-in challenge Path at the **Herald of the Fallen** (the Long Road, the Iron Oath, the Pilgrim's Way, the Slow Burn) and earn a permanent, readable trophy when you see it through.
 - **💀 Hardcore mode + Mak'gora** — one life, permanent death, and consensual duels to the death between hardcore players.
 - **🛡️ Stability-first** — deep, ongoing core-level crash hardening, built for long, stable uptime rather than a realm that falls over every few hours.
 - **⚙️ Yours to tune** — bot counts, rates, hardcore rules and more are all config. Scales from a solo box to a fully-populated world.
