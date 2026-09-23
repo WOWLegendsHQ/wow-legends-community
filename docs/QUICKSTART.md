@@ -1,13 +1,14 @@
 # WOW Legends — Quick Start (manual install)
 
 **WOW Legends is a repack** — a ready-to-run *Wrath of the Lich King (3.3.5a)* server you host
-yourself, with hundreds of smart playerbots, AI companion chat, hardcore mode, per-character XP and
-a built-in auction economy. You run the world; anyone you invite plays in it.
+yourself, with hundreds of smart playerbots, AI bot chat and a personal AI companion, Warband
+Camps, hardcore mode, per-character XP and a built-in auction economy. You run the world; anyone
+you invite plays in it.
 
-> **Prefer zero hassle?** The **[WOW Legends App](https://wow-legends.eu)** sets all of this up in one
-> click — guided install, one-click updates, and a server that starts and *restarts itself* — no
-> command line, no babysitting. This guide is the **manual** route: you install, run and maintain
-> everything yourself, in this one `wow_legends_repack` folder.
+> **Prefer zero hassle?** The **[WOW Legends App](https://wow-legends.eu/app)** sets all of this up in one
+> click — guided install, one-click updates and backups, and a server that starts and *restarts
+> itself* — no command line, no babysitting. This guide is the **manual** route: you install, run
+> and maintain everything yourself, in this one `wow_legends_repack` folder.
 
 ---
 
@@ -17,9 +18,11 @@ wow_legends_repack\
 ├─ start.bat   ← double-click to run the server (after setup)
 ├─ worldserver.exe, authserver.exe, dbimport.exe (+ runtime DLLs)
 ├─ configs\                ← settings (worldserver.conf, modules\…)
-├─ modules\                ← server modules (playerbots, wowlegends, ahbot, xp) — REQUIRED, don't delete
+├─ modules\                ← server module data (playerbots, wowlegends, ahbot, xp) — REQUIRED, don't delete
 ├─ dump\                   ← the ready-made databases (imported once, in setup)
+│   └─ extras\             ← update SQL for upgrading an OLDER install (fresh installs skip it)
 ├─ data\
+│   ├─ pathways\           ← Legend Roads, the road network bots walk — REQUIRED, don't delete
 │   ├─ sql\create\         ← create_mysql.sql (makes the empty DBs + user)
 │   └─ (extract dbc/maps/vmaps/mmaps/Cameras game data here)
 └─ mysql\                  ← the bundled portable MySQL (from mysql_portable zip), or use your own
@@ -27,7 +30,8 @@ wow_legends_repack\
 
 ## 1. What you need
 - **Windows** (64-bit)
-- **MySQL 8.x** — bundled in `mysql\` (recommended), or your own service
+- **MySQL 8.4 LTS** — bundled in `mysql\` (recommended), or your own MySQL 8.4 service.
+  MariaDB / XAMPP and MySQL 9.x or newer are **not** supported.
 - A **WoW 3.3.5a (build 12340)** client
 - **Game data** — `dbc / maps / vmaps / mmaps / Cameras` (download separately, ~3.2 GB)
 - **Microsoft Visual C++ runtime** — run `vc_redist.x64.exe` once
@@ -62,7 +66,7 @@ window to stop it. (No window auto-restarts after a crash — that's the App's j
    |---|---|---|
    | `admin` | your GM account (level 3) | change this password first |
    | `ahbot` | drives the auction-house economy (server-side) | safe to change — nothing logs in with it |
-   | `wlshop` | the register-portal **web shop** signs in as this to deliver items (GM 3) | change it too — and if you run the website, set the new password in the portal's `config.php` |
+   | `wlshop` | the player portal's **web shop** signs in as this to deliver items (GM 3) | change it too — and if you run the portal, set the new password in its `config.php` |
 
    > ⚠️ Don't **delete or rename** `ahbot` / `wlshop` — the auction house and web shop need these
    > accounts to exist. Just change their passwords.
@@ -78,23 +82,46 @@ window to stop it. (No window auto-restarts after a crash — that's the App's j
 ## 5. Tuning (optional) — `configs\`
 | Want to change… | File | Setting |
 |---|---|---|
-| Bots in the world | `configs\modules\playerbots.conf` | `AiPlayerbot.MaxRandomBots` (default **500**) |
+| Bots in the world | `configs\modules\playerbots.conf` | `AiPlayerbot.MinRandomBots` / `MaxRandomBots` (default **100**) |
 | AI chat on/off + provider | `configs\modules\mod_wowlegends.conf` | `WowLegends.AiChat.Enabled`, `…Provider`, `…ApiKey` |
+| Warband Camps | `configs\modules\mod_wowlegends.conf` | `WowLegends.WarbandCamp.Enabled` (ships **off**) |
 | Hardcore mode | `configs\modules\mod_wowlegends.conf` | `WowLegends.Hardcore.*` |
+| Dungeon Clear | `configs\modules\mod_dungeon_clear.conf` | `DungeonClear.Enable` |
+| AoE loot | `configs\modules\mod_aoe_loot.conf` | `AOELoot.Enable`, `AOELoot.MaxCorpses` |
+| Transmog | `configs\modules\transmog.conf` | the `Transmogrification.*` settings |
 | Auction-house bots | `configs\modules\mod_ahbot.conf` | `AuctionHouseBot.EnableSeller / EnableBuyer` (on) |
-| XP / drop / gold rates | `configs\worldserver.conf` | `Rate.XP.*`, etc. |
+| XP / drop / gold rates | `configs\worldserver.conf` | `Rate.XP.*`, etc. — every player can also pick their own XP rate in-game with `.xp set` |
 | Remote DB / different password | the `*.conf` DB lines | `…DatabaseInfo` connection strings |
 
-**AI companion chat** is **on by default** and uses WOW Legends' **hosted AI** — register at
-**wow-legends.eu**, create an API key (`wlk_…`) and paste it into `WowLegends.AiChat.ApiKey`. Prefer
-fully local & free? Set `WowLegends.AiChat.Provider = ollama` and run a local model
-(`ollama pull qwen2.5:1.5b`). With no key and no local model, the bots simply stay quiet.
+Every setting is documented right above it in its `.conf` file. Settings are read at start-up —
+restart the worldserver after a change.
 
-## 6. Features & commands
-Full how-to (bots, AI chat, XP, hardcore, Mak'gora, gear) + the searchable command list are on the
-website — see the **Guide** and **Commands** pages.
+**AI bot chat** is **on by default** and uses WOW Legends' **hosted AI** — register at
+**wow-legends.eu**, create an API key (`wlk_…`) and paste it into `WowLegends.AiChat.ApiKey`. Hosted
+AI runs on credits (1 credit = 1 bot reply); anyone can top up, supporters get credits included.
+Prefer fully local & free? Set `WowLegends.AiChat.Provider = ollama` and run a local model
+(`ollama pull qwen2.5:1.5b`). Your own OpenAI-compatible provider works too: set `…ApiUrl` and
+`…ApiKey` to it. With no key and no local model, the bots simply stay quiet.
 
-> Tired of the manual upkeep — updates, restarts, tuning? The **[WOW Legends App](https://wow-legends.eu)**
+## 6. Upgrading an older install
+Your characters live in the databases, so an upgrade **never** means re-importing `dump\`:
+1. Stop the servers and **back up** your databases first.
+2. Replace `worldserver.exe` / `authserver.exe` (and the DLLs next to them) with the new ones.
+3. Compare your `configs\` with the new release's — new settings simply use their defaults until
+   you add them.
+4. Apply the SQL files in `dump\extras\` to the matching database, in filename order — see
+   `dump\extras\README.txt`. Every file is safe to run twice, and the set is cumulative, so you can
+   skip versions.
+
+The App does all of this for you with one click.
+
+## 7. Features & commands
+Full how-to (bots, AI chat, Warband Camps, XP, hardcore, Mak'gora, gear) + the searchable command
+list are on the website — see the **[Guide](https://wow-legends.eu/guide)** and
+**[Commands](https://wow-legends.eu/commands)** pages. What changed in each release:
+**[Changelog](https://wow-legends.eu/changelog)**.
+
+> Tired of the manual upkeep — updates, restarts, tuning? The **[WOW Legends App](https://wow-legends.eu/app)**
 > installs, runs and updates your whole server for you, one click.
 
 ---
