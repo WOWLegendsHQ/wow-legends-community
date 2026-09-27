@@ -12,10 +12,10 @@ Warband Camps and hardcore mode. Complete server source included.**
 
 ---
 
-> ### 🌍 v1.5.3 is the free release — for everyone, with the complete server source
-> Everything from **v1.4 "The Living Party"** and **v1.5 "The Community Release"**: bots that walk real roads across every continent, a **Guide** that escorts you anywhere you ask, the **Sage** that answers from your server's own data, plain-language **party orders**, **Dungeon Clear**, and **Warband Camps** — claim the ground you stand on and furnish it — plus **transmog** and **AoE loot**. **[Grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)**, or try the **permanent demo realm** below first, no download needed.
+> ### 🌍 v1.6.0 "Talk to your bots" is the free release — for everyone, with the complete server source
+> Say **"lfg"** in a city and bots who fit your group answer; drive **Dungeon Clear** by talking; hire **Warband Camp staff** (banker, merchant, barkeep, guards) — on top of everything from v1.4 and v1.5: bots that walk real roads, a **Guide** that escorts you anywhere, the **Sage**, plain-language **party orders**, **Warband Camps**, **transmog** and **AoE loot**. **[Grab it from Releases](https://github.com/WOWLegendsHQ/wow-legends-community/releases/latest)**, or try the **permanent demo realm** below first, no download needed.
 >
-> *Supporters run the same builds early: **v1.6.0 "Talk to your bots"** — say "lfg" in a city and bots who fit your group answer, and drive Dungeon Clear by talking — is live in [the App](https://wow-legends.eu/app) today. Every release becomes the free community release later, full server source included. Nothing is permanently paywalled.*
+> *Supporters run the same builds early: **v1.7.0, the community release** — cross-faction bots, account-bound professions, `$lfg` building your whole group, a full PvP set with `.gear pvp` and more, every item from a community suggestion — is live in [the App](https://wow-legends.eu/app) today. Every release becomes the free community release later, full server source included. Nothing is permanently paywalled.*
 
 ---
 
@@ -59,7 +59,7 @@ Two ways to run WOW Legends:
 | | **Community Edition** (this repo) | [**The App**](https://wow-legends.eu/app) |
 |---|---|---|
 | Cost | **Free, forever** | **€25**, a one-time supporter donation — no subscription |
-| Version | the free release (**v1.5.3** today) | the same builds, **early** (**v1.6.0** today) |
+| Version | the free release (**v1.6.0** today) | the same builds, **early** (**v1.7.0** today) |
 | Setup | Manual — you extract & configure it | One-click install, update & manage |
 | Web portal | Bring your own | **Included** — sign-up, shop, armory, leaderboards & admin panel, the same site as [play.wow-legends.eu](https://play.wow-legends.eu) |
 | Best for | Tinkerers, server admins, the curious | Anyone who just wants it running fast |
